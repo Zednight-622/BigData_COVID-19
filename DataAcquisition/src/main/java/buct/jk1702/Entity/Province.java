@@ -10,6 +10,7 @@ import java.util.List;
  */
 @Data
 public class Province {
+
     private String provinceName;
     private String provinceShortName;
     private String currentConfirmedCount;
@@ -21,9 +22,6 @@ public class Province {
     private String locationId;
     private String statisticsData;
     private String cities;
+    private String datetime;
 
-    //实际cities对象
-    private List<City> _cities;
-    //实际DatState对象
-    private List<DayState> _statisticsData;
 }

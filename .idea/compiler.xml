@@ -2,12 +2,28 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DataView" />
+        <module name="DataAcquisition" />
         <module name="Crawler" />
+        <module name="DataProcess_People" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DataProcess" target="1.5" />
+      <module name="Datasource" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Crawler" options="" />
+      <module name="DataAcquisition" options="-parameters" />
+      <module name="DataView" options="-parameters" />
+      <module name="Datasource" options="" />
+    </option>
   </component>
 </project>

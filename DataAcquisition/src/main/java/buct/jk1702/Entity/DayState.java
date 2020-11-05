@@ -8,6 +8,7 @@ import lombok.Data;
  */
 @Data
 public class DayState {
+    private String pId;
     private String confirmedCount;
     private String currentConfirmedCount;
     private String curedCount;

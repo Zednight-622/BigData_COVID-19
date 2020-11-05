@@ -4,7 +4,9 @@
  */
 
 
-object Test {
+object qTest {
   def main(args: Array[String]): Unit = {
+    val clazz = new MyClass("gogogogo")
+    println(clazz.string)
   }
 }

@@ -8,6 +8,7 @@ import lombok.Data;
  */
 @Data
 public class City {
+    private String pId;
     private String cityName;
     private String currentConfirmedCount;
     private String confirmedCount;
